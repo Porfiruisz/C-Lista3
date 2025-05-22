@@ -5,18 +5,18 @@
 using namespace std;
 
 /**
- * Funkcja zwraca czêœæ wspóln¹ dwóch multizbiorów x i y.
- * Zachowuje liczbê powtórzeñ elementów, które wystêpuj¹ w obu multizbiorach.
+ * Funkcja zwraca czÃªÅ“Ã¦ wspÃ³lnÂ¹ dwÃ³ch multizbiorÃ³w x i y.
+ * Zachowuje liczbÃª powtÃ³rzeÃ± elementÃ³w, ktÃ³re wystÃªpujÂ¹ w obu multizbiorach.
  *
- * @param x - pierwszy multizbiór
- * @param y - drugi multizbiór
- * @return wektor zawieraj¹cy czêœæ wspóln¹ multizbiorów
+ * @param x - pierwszy multizbiÃ³r
+ * @param y - drugi multizbiÃ³r
+ * @return wektor zawierajÂ¹cy czÃªÅ“Ã¦ wspÃ³lnÂ¹ multizbiorÃ³w
  *
- * @throws invalid_argument jeœli którykolwiek z argumentów jest pusty
+ * @throws invalid_argument jeÅ“li ktÃ³rykolwiek z argumentÃ³w jest pusty
  */
 vector<int> wspolne(const vector<int>& x, const vector<int>& y) {
     if (x.empty() || y.empty()) {
-        throw invalid_argument("Argumenty nie mog¹ byæ puste");
+        throw invalid_argument("Argumenty nie moga byc puste");
     }
 
     vector<int> wynik;
@@ -54,7 +54,7 @@ int main() {
         vector<int> m4 = { 0 };
         wypisz(wspolne(m3, m4));
 
-        vector<int> m5;  // pusty wektor, ¿eby pokazaæ wyj¹tek
+        vector<int> m5;  // pusty wektor, Â¿eby pokazaÃ¦ wyjÂ¹tek
         vector<int> m6 = { 1 };
         wypisz(wspolne(m5, m6));
     }
