@@ -4,9 +4,11 @@
 using namespace std;
 
 /**
- * Funkcja collatz oblicza ci¹g Collatza dla podanej liczby c.
- * @param c - liczba pocz¹tkowa ci¹gu (c0), powinna byæ dodatnia.
- * @return wektor kolejnych elementów ci¹gu a¿ do momentu osi¹gniêcia 1.
+ * Funkcja collatz oblicza ciÂ¹g Collatza dla podanej liczby c.
+ * @param c - liczba poczÂ¹tkowa ciÂ¹gu (c0), powinna byÃ¦ dodatnia.
+ * @return wektor kolejnych elementÃ³w ciÂ¹gu aÂ¿ do momentu osiÂ¹gniÃªcia 1.
+ *
+ * Å¹rÃ³dÅ‚a: https://programmerabroad.com/collatz-sequence-in-cpp/
  */
 vector<int> collatz(int c) {
     vector<int> wynik;
@@ -25,7 +27,7 @@ vector<int> collatz(int c) {
 
 /**
  * Funkcja wypisz wypisuje elementy wektora w formacie [a, b, c, ...].
- * @param dane - referencja do wektora liczb ca³kowitych.
+ * @param dane - referencja do wektora liczb caÂ³kowitych.
  */
 void wypisz(const vector<int>& dane) {
     cout << "[";
@@ -39,7 +41,7 @@ void wypisz(const vector<int>& dane) {
 int main() {
     int liczba;
     cout << "Podaj liczbe dodatnia: ";
-    cin >> liczba; // Pobiera od u¿ytkownika liczbê pocz¹tku ci¹gu
+    cin >> liczba; // Pobiera od uÂ¿ytkownika liczbÃª poczÂ¹tku ciÂ¹gu
 
     vector<int> wynik = collatz(liczba);
     if (wynik.empty()) {
